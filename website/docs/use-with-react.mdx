@@ -79,10 +79,10 @@ Note that if you want to get TypeScript type hints, you need to extend the attri
 
 ```jsx title="index.d.ts"
 import 'react'
-import { AtomicProps } from '@fower/atomic-props';
+import '@fower/atomic-props';
 
 declare module 'react' {
-  interface HTMLAttributes<T> extends AtomicProps {}
+  interface HTMLAttributes<T> extends FowerTypes.AtomicProps {}
 }
 
 ```
